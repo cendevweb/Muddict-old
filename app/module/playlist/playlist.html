@@ -1,0 +1,8 @@
+
+<h1 class="playlistTitle">{{playlist.name}}</h1>
+<div class="divYoutube" id="ytBlock"><youtube-video id="player" player-vars="playlist.playerVars" player="playlist.bestPlayer" ng-model="playlist.bestPlayer"></youtube-video></div>
+<div id="parentBlock" class="block bckWhite" ng-class="{ 'listChangeOnClick': playlist.isItemClicked }" ng-scrollbars ng-scrollbars-config="playlist.config">
+	<div class="blockPlaylist" ng-repeat="song in playlist.fullList track by $index" ng-click="playlist.prsAction($index);">
+    	  	<p>{{song.snippet.title}}</p>
+  </div> 
+</div> 

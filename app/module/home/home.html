@@ -1,0 +1,30 @@
+<style>
+  .horizontal-collapse {
+    height: 38.5vh;
+    position: absolute;
+    top: 30vh;
+    left: 30vw;
+    border-left: #fff 2px solid;
+    padding-left: 15px;
+  }
+	#player{
+		width: 32.8vw;
+		height: 38.5vh;
+	}
+</style>
+<nav>
+	<ul id="menu">
+
+		<li id="playmenu" class="hvr-forward">
+			<a ng-click="isCollapsedHorizontal = !isCollapsedHorizontal; home.prsAction();">PLAY A RANDOM SONG</a>
+		</li>
+		<li id="catmenu" class="hvr-forward"><a ui-sref="categorie">CATEGORY</a></a></li>
+		<li id="whmenu" class="hvr-forward"><a ui-sref="wh">WEEKLY HIGHLIGHT</a></li>
+		<li id="stdmenu" class="hvr-forward"><a ui-sref="sotd">SONG OF THE DAY</a></li>
+		<li id="favmenu" class="hvr-forward"><a ui-sref="favorites">FAVORITES</a></li>
+	</ul>
+</nav>
+<div class="horizontal-collapse" uib-collapse="isCollapsedHorizontal" horizontal>
+	<youtube-video id="player" player-vars="home.playerVars" player="home.bestPlayer" ng-model="home.bestPlayer"></youtube-video>
+</div>
+  

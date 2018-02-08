@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html ng-app="MuddictApp" lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Muddict</title>
+	<link rel="stylesheet" type="text/css" href="node_modules/hover.css/css/hover.css">
+	<link rel="stylesheet" type="text/css" href="node_modules/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css">
+	<script src="node_modules/jquery/dist/jquery.min.js"></script>
+	<!-- <script src="node_modules/angular/angular.min.js"></script>
+	<script src="node_modules/angular-animate/angular-animate.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.12.0/ui-bootstrap.js"></script>
+	-->
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-animate.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-sanitize.js"></script>
+    <script src="node_modules/ui-bootstrap-tpls-2.5.0.js"></script> 
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="node_modules/angular-youtube-embed/src/angular-youtube-embed.js"></script>
+    <script src="node_modules/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="node_modules/ng-scrollbars/dist/scrollbars.min.js"></script>
+    
+<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCxqySVi2HnWiykANM_UpxVETbpqlU9dGE",
+    authDomain: "muddict-163210.firebaseapp.com",
+    databaseURL: "https://muddict-163210.firebaseio.com",
+    projectId: "muddict-163210",
+    storageBucket: "muddict-163210.appspot.com",
+    messagingSenderId: "124281471230"
+  };
+  firebase.initializeApp(config);
+</script>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<script src="node_modules/angular-ui-router/release/angular-ui-router.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="shortcut icon" href="favicon.png" />
+	<base href="/">
+</head>
+<body ng-class="{blur: blur}">
+	<header>
+		<div id="title">
+			<img src="assets/logo-Full.svg" alt="logo">
+			<h3>For all people who are music addict</h3>
+		</div>
+		<div id="headRight">
+			<img src="assets/graphique_content/head/alarm2.png" alt="" class="iconeHead" style="padding-left: 5px;">
+			<img src="assets/graphique_content/head/close-envelope.png" alt="" class="iconeHead whiteBorder">
+			<div id="account"><p>Dylan Tuna</p></div>
+		</div>
+	</header>
+	<main ui-view></main>
+	
+	<footer>
+		<div id="social">
+			<a href="#"><img src="assets/graphique_content/Social_link/before/youtube.png" alt=""></a>
+			<a href="#"><img src="assets/graphique_content/Social_link/before/twitter-logo.png" alt=""></a>
+			<a href="#"><img src="assets/graphique_content/Social_link/before/facebook-logo.png" alt=""></a>
+			<a href="#"><img src="assets/graphique_content/Social_link/before/instagram-logo.png" alt=""></a>
+			<a href="#"><img src="assets/graphique_content/Social_link/before/snapchat.png" alt=""></a>
+		</div>
+		<div id="btnHome" class="hvr-fade" ng-show="btnHome" ui-sref="home">Home</div>
+		<div id="btnBack" class="hvr-fade" ng-show="btnBack" ui-sref="cat">Back</div>
+	</footer>
+	<script type="text/javascript" src="app/app.js"></script>
+	<script type="text/javascript" src="app/module/home/home.js"></script>
+	<script type="text/javascript" src="app/module/cat/cat.js"></script>
+	<script type="text/javascript" src="app/module/playlist/playlist.js"></script>
+	<script type="text/javascript" src="app/service.js"></script>
+	<script src="https://apis.google.com/js/client.js?onload=init"></script>
+</body>
+
+</html>

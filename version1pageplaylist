@@ -1,0 +1,20 @@
+#parentBlock {
+    position: absolute;
+    top: 10vw;
+    left: 51.5vw;
+    width: 44%;
+    height: 65vh;
+}
+<style>…</style>
+.listChangeOnClick {
+    height: 28vw !important;
+    top: 12vw !important;
+}
+
+.divYoutube {
+    width: 44%;
+    height: 28vw;
+    left: 5.5vw;
+    top: 12vw;
+    position: absolute;
+}

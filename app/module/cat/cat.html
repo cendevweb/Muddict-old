@@ -1,0 +1,8 @@
+<div class="block">
+	<div class="blockCat" ng-repeat="categ in cat.catList" ng-click="cat.setParams(categ.span);">
+		<img ng-src="{{categ.image}}">
+		<span>{{categ.span}}</span>
+		<div class="borderSpan"></div>
+		<p>{{categ.text}}</p>
+	</div>
+</div>
