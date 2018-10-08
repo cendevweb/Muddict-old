@@ -1,7 +1,7 @@
 (function(){
 
   'use strict';
-	const app = angular.module('MuddictApp', ['ui.router','ngAnimate','ngSanitize','ui.bootstrap','youtube-embed','ngScrollbars']);
+	const app = angular.module('MuddictApp', ['ui.router','ngAnimate','ngSanitize','ui.bootstrap','youtube-embed','ngScrollbars','firebase']);
 
   app.config(["$locationProvider", function($locationProvider) {
   $locationProvider.html5Mode(true);
